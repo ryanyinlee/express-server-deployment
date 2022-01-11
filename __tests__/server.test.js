@@ -11,6 +11,6 @@ describe('Testing HTTP server!', () => {
         let response = await request.post('/message?text=test&author=test');
 
         expect(response.status).toEqual(200);
-        expect(response.body[0].text)
+        expect(response.body[0].text).toEqual('test');
     })
 })

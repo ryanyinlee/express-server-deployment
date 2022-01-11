@@ -24,4 +24,22 @@ run `npm install`
 
 * POST '/message?text=YOURTEXT&author=YOURNAME'
 
-## Features
+## Current Deploys/GitHub Repository
+
+GitHubRepository
+
+https://github.com/ryanyinlee/express-server-deployment
+
+
+Dev Branch:
+
+https://ryanlee-server-deploy-dev.herokuapp.com/
+
+Main/Production:
+
+https://ryanlee-server-deploy-prod.herokuapp.com/
+
+
+## 1/10/21 Pull Request
+
+https://github.com/ryanyinlee/express-server-deployment/pull/3

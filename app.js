@@ -2,8 +2,6 @@
 
 const express = require('express');
 
-// express -> singleton ;atter, returns an object that can be modified
-
 const app = express();
 
 const messages = [];
@@ -22,9 +20,12 @@ app.get('/message', (request,response) => {
     
     console.log('Someone sent a request via ' + request.method);
     // create a message and send it to server from client
-    response.send(messages);
+    // response.send(messages);
+    response.send("message route in app is active");
 
 }); // modifies app singleton
+
+
 
 
 function createMessage(request, response, next) {

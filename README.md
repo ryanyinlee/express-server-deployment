@@ -43,3 +43,9 @@ https://ryanlee-server-deploy-prod.herokuapp.com/
 ## 1/10/21 Pull Request
 
 https://github.com/ryanyinlee/express-server-deployment/pull/3
+
+## 1/11/21 UML
+
+To be improved. I know they're important, just not great at making them yet.
+
+![to be improved](lab2whiteboarduml.PNG)

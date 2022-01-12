@@ -10,11 +10,11 @@ const notFound = require('./error-handlers/404.js');
 const serverError = require('./error-handlers/500.js');
 
 app.get('/', (request, response) => {
-    // console.log(request.method);
+    console.log("hitting the home route with " + request.method);
     response.send('hitting the home route');
 });
 
-let persons = [];
+const persons = [];
 
 class Person {
     constructor(name) {
@@ -40,9 +40,9 @@ function createPerson(request, response, next) {
     const personName = request.query.name;
     
     if (!personName) {
-        next('No text or author');
+        next('No name entered');
     } else {
-        const person = new Person(personName); // creates message
+        const person = new Person(personName); // creates Person
         request.person = person;
         next();
 
@@ -59,7 +59,7 @@ function savePerson( request, response, next ){
 // POST -> localhost:3000/person?name=testybob
 app.post('/person', createPerson, savePerson, (request, response, next) => {
     response.send(persons);
-    console.log("post route hit for /person with " + persons)
+    console.log("post route hit for /postperson with " + JSON.stringify(persons));
 
 });
 

@@ -1,11 +1,13 @@
-'use strict'
+"use strict";
 
 function validator(request, response, next) {
+    let name = req.body.name;
 
-    
-    
-    next();
+    if (!name) {
+        next("bad request");
+    } else {
+        next();
+    }
 }
-
 
 module.exports = validator;
